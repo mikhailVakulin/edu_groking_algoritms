@@ -27,3 +27,7 @@ string BinarySearch(int number, int[] array)
 
 int[] array = FillArray(10);
 System.Console.WriteLine(BinarySearch(5,array));
+
+
+
+// Написать метод с рекурсией- используя принцип разделяй и властвуй
