@@ -43,3 +43,30 @@ const userProfile = {
 };
 
 console.log(userProfile);
+
+myCity.cityGreeting = function () {
+  console.log("Grerting");
+};
+
+myCity.cityGreeting();
+
+const myCity2 = Object.assign({}, myCity); //  делает клон объекта вложенные объекты мутируют
+
+myCity2.size = 20;
+console.log(myCity.size);
+console.log(myCity2.size);
+
+const myCity3 = { ...myCity }; // делает копию объекта вложенные объекты мутируют
+
+const myCity4 = JSON.parse(JSON.stringify(myCity)); // делает копию объекта вложенные объекты НЕ мутируют
+console.log(myCity4);
+
+function sum(a, b) {
+  // вариант объявления функции
+  let c = a + b;
+  return c;
+}
+
+console.dir(sum); // можно смотреть структуру функции в консоли браузера
+
+console.log(sum(2, 3));
