@@ -13,3 +13,10 @@
 - variable - переменная
 - assignment - назначение
 - reference - упонминание, ссылка
+- assign - присваивать
+- permutation - перестановка
+- find - найти
+- strictly - строго
+- explanation - объяснение
+- example - пример
+- source - источник
