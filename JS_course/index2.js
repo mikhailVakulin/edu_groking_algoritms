@@ -20,3 +20,10 @@ function printName() {
 }
 
 setTimeout(printName, 1000); // printName в дааном случае-  колбэк фукция
+("use strict"); // первая строка в начлле кода(или функции), не дает использовать необъявленные переменные
+
+// let a, b;
+// a = 10;
+// b = a;
+// let c = a + b;
+// console.log(c);
