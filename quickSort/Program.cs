@@ -2,7 +2,7 @@
 /// метод разбиения массива для быстрой сортировки
 int partition(int[] array, int left, int right) // (массив, первый элемент, последний элемент)
 {
-    int pivot = array[(left+right)/2];  // индекс опорного элемента
+    int pivot = array[(left + right) / 2];  // индекс опорного элемента
     int i = left;
     int j = right;
 
@@ -23,6 +23,8 @@ int partition(int[] array, int left, int right) // (массив, первый �
 
 
 
+
+
 /// метод меняет элементы местами
 void swapElenets(int[] array, int i, int j)  // i,j = индексы элементов для замены
 {
@@ -31,6 +33,9 @@ void swapElenets(int[] array, int i, int j)  // i,j = индексы элеме�
     array[j] = temp;
 
 }
+
+
+
 
 
 /// метод рекурсивной быстрой сортировки
@@ -56,7 +61,12 @@ int[] quickSort(int[] array, int left, int right)
 }
 
 
+
+
 int[] testArray = { 4, 2, 6, 5, 3, 9, 1, 10, 8, 7, 4 };
+
+
+
 
 int a = partition(testArray, 0, testArray.Length - 1);
 System.Console.WriteLine(a);

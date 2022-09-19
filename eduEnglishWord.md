@@ -26,3 +26,10 @@
 - grid - сетка
 - amount - количество
 - customer - покупатель/заказчик
+- debug - отладка
+- condition - условие
+- expression - выражение
+- loop - цикл
+- cause - причина
+- summary - резюме/краткое содержание
+- terminate - прекратить
