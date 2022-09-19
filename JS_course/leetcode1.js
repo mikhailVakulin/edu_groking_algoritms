@@ -1,4 +1,4 @@
-var finalValueAfterOperations = function (operations) {
+const finalValueAfterOperations = function (operations) {
   let sum = 0;
   for (let index = 0; index < operations.length; index++) {
     const element = operations[index];
