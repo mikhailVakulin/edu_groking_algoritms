@@ -4,6 +4,7 @@ const [fruitOne, fruitTwo] = fruits; // код деструктуризации 
 
 console.log(fruitOne);
 console.log(fruitTwo);
+///
 
 const userProfile = {
   name: "Mikhail",
@@ -16,6 +17,7 @@ const { hasSignedAgreement } = userProfile;
 
 console.log(name);
 console.log(hasSignedAgreement);
+///
 
 const userInfo = ({ name, commentsQty }) => {
   // синтаксис деструктуризации функции
