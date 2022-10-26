@@ -29,8 +29,8 @@ for (const key in userProfile) {
   console.log(userProfile[key]);
 }
 // оптимальная конструкция для перебора свойств или значений свойств объектов
-Object.keys(userProfile).forEach((el) => {
-  console.log(el);
+Object.keys(userProfile).forEach((el, i) => {
+  console.log(`${el}[${i}]`);
 });
 
 Object.values(userProfile).forEach((el) => {
