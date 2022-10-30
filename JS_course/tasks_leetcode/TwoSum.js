@@ -1,4 +1,4 @@
-// Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+// Given an nums of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 // You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
@@ -26,15 +26,16 @@
 // Only one valid answer exists.
 
 // Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
-const numberArray = [3, 2, 4];
+const numbernums = [3, 2, 4];
 
-const TwoSum = (array, target) => {
-  array.forEach((el, index) => {
-    if (el + array[index + 1] === target) {
-      const newArray = [index, index + 1];
-      console.log(newArray);
-      return newArray;
+const TwoSum = (nums, target) => {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = 0; j < nums.length; j++) {
+      if (i !== j && nums[i] + nums[j] === target) {
+        const result = [i, j];
+        return result;
+      }
     }
-  });
+  }
 };
-console.log(TwoSum(numberArray, 5));
+console.log(TwoSum(numbernums, 6));
