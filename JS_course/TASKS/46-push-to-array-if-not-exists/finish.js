@@ -11,10 +11,6 @@
  */
 
 const myNumbers = [123, 50, 27];
-function pushIfUnique(arr, el) {
-  if (arr.includes(el)) return console.log(`${el} уже находится в массиве`);
-  return arr.push(el);
-}
 
 pushIfUnique(myNumbers, 50); // "50 уже в массиве"
 console.log(myNumbers); // [123, 50, 27]
