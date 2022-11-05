@@ -6,19 +6,19 @@
  *  - выражение-инструкция (expression statement)
  */
 
-15; // выражение
+15; // -->expession statement
 
 const myObject = {
-  // выражение
+  // -->expression statement
   x: 10,
   y: true,
 };
 
-myObject.z = "abc"; // выражение-инструкция
+myObject.z = "abc"; // -->experession statement
 
 delete myObject.x; // инструкция
 
-let newVariable; // инструкцйия
+let newVariable; // -->statement
 
 newVariable = 30 + 5;
 
