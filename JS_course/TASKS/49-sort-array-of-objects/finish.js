@@ -8,36 +8,48 @@
  *
  * 3. Оригинальный массив должен остаться без изменений
  */
-
+function sortProductsByPrice(products) {
+  const resArr = [...products];
+  for (let i = 0; i < resArr.length; i++) {
+    for (let j = 0; j < resArr.length; j++) {
+      if (j > i && resArr[i].price > resArr[j].price) {
+        let temp = resArr[i];
+        resArr[i] = resArr[j];
+        resArr[j] = temp;
+      }
+    }
+  }
+  return resArr;
+}
 const inputProducts = [
   {
-    title: 'Phone case',
+    title: "Phone case",
     price: 23,
     quantity: 2,
-    category: 'Accessories',
+    category: "Accessories",
   },
   {
-    title: 'Android phone',
+    title: "Android phone",
     price: 150,
     quantity: 1,
-    category: 'Phones',
+    category: "Phones",
   },
   {
-    title: 'Headphones',
+    title: "Headphones",
     price: 78,
     quantity: 1,
-    category: 'Accessories',
+    category: "Accessories",
   },
   {
-    title: 'Sport Watch',
+    title: "Sport Watch",
     price: 55,
     quantity: 2,
-    category: 'Watches',
+    category: "Watches",
   },
-]
+];
 
-// const sortedProducts = sortProductsByPrice(inputProducts)
+const sortedProducts = sortProductsByPrice(inputProducts);
 
-// console.log(sortedProducts) // Массив отсортированных товаров
+console.log(sortedProducts); // Массив отсортированных товаров
 
-// console.log(inputProducts) // Оригинальный массив не должен измениться
+console.log(inputProducts); // Оригинальный массив не должен измениться

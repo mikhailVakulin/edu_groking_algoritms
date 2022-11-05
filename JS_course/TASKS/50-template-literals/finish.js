@@ -8,8 +8,8 @@
  */
 
 // ТЕСТ 1
-const myNumber = 9
-console.log(templateLiteral(myNumber))
+const myNumber = 9;
+console.log(templateLiteral(myNumber));
 /* 
 Число 9.
 Это число меньше 10.
@@ -17,10 +17,18 @@ console.log(templateLiteral(myNumber))
 */
 
 // ТЕСТ 2
-const myAnotherNumber = 25
-console.log(templateLiteral(myAnotherNumber))
+const myAnotherNumber = 25;
+console.log(templateLiteral(myAnotherNumber));
 /* 
 Число 25.
 Это число больше или равно 10.
 Квадратный корень этого числа - 5.
 */
+
+function templateLiteral(num) {
+  console.log("Число " + num);
+  console.log(
+    num >= 10 ? "Это число больше или равно 10." : "Это число меньше 10."
+  );
+  console.log("Квадратный корень этого числа - " + Math.sqrt(num));
+}
