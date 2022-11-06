@@ -16,12 +16,11 @@ const photosGallery = (title, dimensions, date) => {
   return {
     title,
     date,
-    [dimensions]: dimensions === "1920x1080" ? true : false,
-    info: function () {
+    [dimensions]: true,
+    info() {
       console.log(`Фото "${title}" имеет разрешение ${dimensions}`);
     },
-
-    publishInfo: () => {
+    publishInfo() {
       console.log(
         `Фото "${title}" было опубликовано ${Math.floor(
           (new Date().getTime() - date.getTime()) / 1000
@@ -32,7 +31,7 @@ const photosGallery = (title, dimensions, date) => {
 };
 
 const myDogPhoto = photosGallery("My dog", "1920x1080", new Date());
-
+console.log(myDogPhoto);
 const testDimension1 = "1920x1080";
 const testDimension2 = "1080x720";
 
