@@ -8,16 +8,19 @@
  */
 
 let person = {
-  _id: '5ad8cefcc0971792dacb3f1f',
+  _id: "5ad8cefcc0971792dacb3f1f",
   index: 4,
   processed: false,
-  cart: ['item1', 'item2', 'item3'],
-  email: 'slarsen@test.com',
-  name: 'Samanta Larsen',
+  cart: ["item1", "item2", "item3"],
+  email: "slarsen@test.com",
+  name: "Samanta Larsen",
   cartId: 435,
+};
+{
+  let _id, processed, cart;
+  ({ _id, processed, cart, ...person } = person);
 }
-
-console.log(person)
+console.log(person);
 /*
 {
   index: 4,
