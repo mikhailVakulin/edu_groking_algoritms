@@ -1,7 +1,11 @@
-nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+const nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
 
 var removeDuplicates = function (nums) {
-  // let counter = 0;
-  for (let i = 0; i < nums.length; i++) {}
+  nums = [...new Set(nums)];
+  resArr = [...nums];
+  return nums.length;
 };
+
 console.log(removeDuplicates(nums));
+console.log(nums);
+console.log(resArr);
