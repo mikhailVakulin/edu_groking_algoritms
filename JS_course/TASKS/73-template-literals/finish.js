@@ -8,12 +8,25 @@
  */
 
 const cars = [
-  { brand: 'Honda', price: 13000 },
-  { brand: 'Rolls-Royce', price: 120000 },
-]
+  { brand: "Honda", price: 13000 },
+  { brand: "Rolls-Royce", price: 120000 },
+];
 
-// Создайте функцию "carInfo" здесь
+// option 1
+// function carInfo(cars) {
+//   if (cars.price <= 20000)
+//     return `cz
+//   if (cars.price > 20000)
+//     return `Цена автомобиля ${cars.brand} - ${cars.price}$ и это дорогая машина`;
+// }
 
-cars.forEach((car) => console.log(carInfo(car)))
+// option 2
+function carInfo({ brand, price }) {
+  return `Цена автомобиля ${brand} - ${price}$ и это ${
+    price <= 20000 ? "дешевая" : " дорогая"
+  } машина`;
+}
+
+cars.forEach((car) => console.log(carInfo(car)));
 // Цена автомобиля Honda - 13000$ и это дешёвая машина
 // Цена автомобиля Rolls-Royce - 120000$ и это дорогая машина
