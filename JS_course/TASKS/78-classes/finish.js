@@ -12,6 +12,11 @@
  *
  * 4. Выводы в консоли должны совпасть
  */
+class Fruit{
+constructor {
+    title
+}
+}
 
 const apple = new Fruit('Apple', 2)
 console.log(apple.priceInfo())

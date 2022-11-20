@@ -13,20 +13,35 @@
  *  - greet
  *  - changeGreeting
  */
+const createGreeting = () => {
+  let greetingString = "Hey, this is";
 
-const greeting1 = createGreeting()
+  function greet(name) {
+    return `${greetingString} ${name}`;
+  }
 
-console.log(greeting1.greet('Bob'))
+  function changeGreeting(newGreeting) {
+    greetingString = newGreeting;
+  }
+  return {
+    greet,
+    changeGreeting,
+  };
+};
+
+const greeting1 = createGreeting();
+console.log(greeting1);
+console.log(greeting1.greet("Bob"));
 // Hey, this is Bob
 
-greeting1.changeGreeting('Good Morning from')
+greeting1.changeGreeting("Good Morning from");
 
-console.log(greeting1.greet('Emily'))
+console.log(greeting1.greet("Emily"));
 // Good Morning from Emily
 
 /* ____________  */
 
-const greeting2 = createGreeting()
+const greeting2 = createGreeting();
 
-console.log(greeting2.greet('Emily'))
+console.log(greeting2.greet("Emily"));
 // Hey, this is Emily
