@@ -14,7 +14,19 @@
 // Both customers are considered the richest with a wealth of 6 each, so return 6.
 
 var maximumWealth = function (accounts) {
-  for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-  }
+  let max = 0;
+  accounts.forEach((el) => {
+    max =
+      el.reduce((sum, num) => sum + num, 0) > max
+        ? el.reduce((sum, num) => sum + num)
+        : max;
+  });
+  return max;
 };
+
+console.log(
+  maximumWealth([
+    [1, 2, 3],
+    [3, 2, 1],
+  ])
+);

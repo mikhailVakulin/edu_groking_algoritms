@@ -1,13 +1,15 @@
-strs = ["flower", "flow", "flight"];
+strs = ["flower", "flowj", "flowight"];
 
 var longestCommonPrefix = function (strs) {
-  let j = 0;
-  counter = 0;
-  for (let i = 0; i < strs.length; i++) {
-    while (j < strs.length - 1) {
-      if (strs[j][i] === strs[j][i + 1]) counter++;
+  let j;
+  function indexLetter(strs, j) {
+    for (j; j < 201; j++) {
+      for (let i = 0; i < strs.length; i++) {
+        if (strs[i][j] !== strs[j < strs.length ? j : strs.length - 1][j])
+          return j;
+      }
     }
   }
-  return strs;
+  return strs[0].slice(0, indexLetter(strs, 0));
 };
-console.log(longestCommonPrefix(strs)[2][1]);
+console.log(longestCommonPrefix(strs));
