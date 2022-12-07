@@ -46,3 +46,36 @@ button {
 .about__image {
   width: 500px;
 }
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 115px;
+  padding-bottom: 115px;
+  background: url("img/back.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about h1 {
+  font-size: 70px;
+  line-height: 76px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 30px;
+  opacity: 0.8;
+}
+
+.about button {
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 20px 25px;
+  margin-top: 20px;
+}
+
+.about__info {
+  max-width: 550px;
+}
