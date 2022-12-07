@@ -22,10 +22,10 @@ function sumNumbers(...arr) {
   return result;
 }
 
-function sumNumbers1(...arr) {
+function sumNumbers1() {
   let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
   }
   console.log(sum);
   return sum;
